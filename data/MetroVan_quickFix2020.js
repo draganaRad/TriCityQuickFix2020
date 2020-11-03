@@ -15,8 +15,8 @@ var metroVanData = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -122.80095,
-                    49.23277
+                    -122.801038,
+                    49.232805
                 ]
             }
         },
@@ -33,8 +33,8 @@ var metroVanData = {
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -122.80103,
-                    49.23281
+                    -122.800889,
+                    49.232805
                 ]
             }
         }
