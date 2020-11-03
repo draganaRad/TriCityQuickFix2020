@@ -86,11 +86,11 @@ function onEachFeature(feature, layer) {
             var city = feature.properties.city.replace(/\s/g, "");
             //console.log(city)
             popupContent += "<br>"
-            var imageSrc = "/img/" + city + "/" + feature.properties.photo
+            var imageSrc = "img/" + city + "/" + feature.properties.photo
             popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' width='150' height='100'></img></a>"
             // add second photo
             if (feature.properties.photo_1) {
-                imageSrc = "/img/" + city + "/" + feature.properties.photo_1
+                imageSrc = "img/" + city + "/" + feature.properties.photo_1
                 popupContent += "<br>"
                 popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' width='150' height='100'></img></a>"
                 //popupContent += "<a href='/img/Coquitlam/4.PNG' target='_blank'><img src='/img/Coquitlam/4.PNG' width='150' height='100'></img></a>"
