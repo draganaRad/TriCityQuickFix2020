@@ -8,21 +8,47 @@ L.tileLayer(
 }
 ).addTo(map);
 
+// colors and styles -------------------
 var portMoodyColor = "#2D699B" // 'darkblue'
 var coquitlamColor = "#563B68" // 'darkpurple'
 var portCoqColor = "#878E39" // 'darkgreen'
 var metroVanColor = "#516B7A" // 'cadetblue'
-// 516B7A - MetroVan (dark grey)
-// 563B68 - Coquitlam (dark purple)
-// 878E39 - Port Coquitlam (dark green)
-// 2D699B - Port Moody (dark blue)
 
+// icon colors
+var portMoodyIconColor = "darkblue"
+var coquitlamIconColor = "darkpurple"
+var portCoqIconColor = "darkgreen"
+var metroVanIconColor = "cadetblue"
+
+// icon light colors (add 100 to regular colors in rgb "Pages" color format dialog)
+var portMoodyIconLight = "#91CDFF" // lighter blue
+var coquitlamIconLight = "#BA9FCC" // lighter purple
+var portCoqIconLight = "#EBF29D" // lighter green
+var metroVanIconLight = "#B5CFDE" // lighter blue grey
+
+var styleOpacity = 0.5
+var portMoodyStyle = {
+    "color": portMoodyColor,
+    "weight": 5,
+    "opacity": styleOpacity
+};
 var coquitlamStyle = {
     "color": coquitlamColor,
     "weight": 5,
-    "opacity": 0.8
+    "opacity": styleOpacity
+};
+var portCoqStyle = {
+    "color": portCoqColor,
+    "weight": 5,
+    "opacity": styleOpacity
+};
+var metroVanStyle = {
+    "color": metroVanColor,
+    "weight": 5,
+    "opacity": styleOpacity
 };
 
+// map code -------------------------
 function onEachFeature(feature, layer) {
     var popupContent = ""
     if (feature.properties) {
@@ -30,7 +56,7 @@ function onEachFeature(feature, layer) {
         if (feature.properties.city) {
             popupContent += "<b>" + feature.properties.city + "</b>";
             if (feature.id) {
-                popupContent += " (Quick fix id: " + feature.id + ")";
+                popupContent += " (Quick fix id: <b>" + feature.id + "</b>)";
             }
         }
         // add type
@@ -49,28 +75,56 @@ function onEachFeature(feature, layer) {
             popupContent += "<br><b>Description: </b>";
             popupContent += feature.properties.description;
         }
+        // add municipality answer
+        if (feature.properties.municipality) {
+            popupContent += "<br><b>Municipality response: </b>";
+            popupContent += feature.properties.municipality;
+        }
         // add photo
         if (feature.properties.photo) {
+            // remove white spaces in city if exist
+            var city = feature.properties.city.replace(/\s/g, "");
+            //console.log(city)
             popupContent += "<br>"
-            var imageSrc = "/img/" + feature.properties.city + "/" + feature.properties.photo
+            var imageSrc = "/img/" + city + "/" + feature.properties.photo
             popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' width='150' height='100'></img></a>"
             // add second photo
             if (feature.properties.photo_1) {
-                imageSrc = "/img/" + feature.properties.city + "/" + feature.properties.photo_1
+                imageSrc = "/img/" + city + "/" + feature.properties.photo_1
                 popupContent += "<br>"
                 popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' width='150' height='100'></img></a>"
-                //popupContent += "<a href='/img/coquitlam/4.PNG' target='_blank'><img src='/img/coquitlam/4.PNG' width='150' height='100'></img></a>"
+                //popupContent += "<a href='/img/Coquitlam/4.PNG' target='_blank'><img src='/img/Coquitlam/4.PNG' width='150' height='100'></img></a>"
             }
         }
     }
     layer.bindPopup(popupContent);
 }
 
-var circleMarker = L.AwesomeMarkers.icon({
+// add port moody layer --------------
+var portMoodyMarker = L.AwesomeMarkers.icon({
     icon: 'circle',
-    markerColor: 'darkpurple',
+    markerColor: portMoodyIconColor,
     prefix: 'fa',
-    iconColor: '#BA9FCC' // lighter purple
+    iconColor: portMoodyIconLight
+});
+
+var portMoodyLayer = new L.geoJSON(portMoodyData, {
+    style: portMoodyStyle,
+    onEachFeature: onEachFeature,
+    pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, {
+            icon: portMoodyMarker
+        });
+    }
+});
+portMoodyLayer.addTo(map);
+
+//add coquitlam layer --------------
+var coquitlamMarker = L.AwesomeMarkers.icon({
+    icon: 'circle',
+    markerColor: coquitlamIconColor,
+    prefix: 'fa',
+    iconColor: coquitlamIconLight
 });
 
 var coquitlamLayer = new L.geoJSON(coquitlamData, {
@@ -78,14 +132,51 @@ var coquitlamLayer = new L.geoJSON(coquitlamData, {
     onEachFeature: onEachFeature,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
-            icon: circleMarker
+            icon: coquitlamMarker
         });
     }
 });
-
 coquitlamLayer.addTo(map);
 
-// add legend
+// add port coquitlam layer --------------
+var portCoqMarker = L.AwesomeMarkers.icon({
+    icon: 'circle',
+    markerColor: portCoqIconColor,
+    prefix: 'fa',
+    iconColor: portCoqIconLight
+});
+
+var portCoqLayer = new L.geoJSON(poCoData, {
+    style: portCoqStyle,
+    onEachFeature: onEachFeature,
+    pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, {
+            icon: portCoqMarker
+        });
+    }
+});
+portCoqLayer.addTo(map);
+
+// add metro van layer --------------
+var metroVanMarker = L.AwesomeMarkers.icon({
+    icon: 'circle',
+    markerColor: metroVanIconColor,
+    prefix: 'fa',
+    iconColor: metroVanIconLight
+});
+
+var metroVanLayer = new L.geoJSON(metroVanData, {
+    style: metroVanStyle,
+    onEachFeature: onEachFeature,
+    pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, {
+            icon: metroVanMarker
+        });
+    }
+});
+metroVanLayer.addTo(map);
+
+// add legend -----------------
 let legend = L.control({ position: "topright" });
 legend.onAdd = function () {
     let div = L.DomUtil.create("div", "legend");
@@ -98,48 +189,3 @@ legend.onAdd = function () {
     return div;
 };
 legend.addTo(map)
-
-
-  //L.marker([51.927913,4.521303], {icon: L.AwesomeMarkers.icon({icon: 'map-marker', prefix: 'fa', markerColor: 'red', iconColor: '#f28f82'}) }).addTo(map);
-
-// L.geoJSON([bicycleRental, campus], {
-
-// 	style: function (feature) {
-// 		return feature.properties && feature.properties.style;
-// 	},
-
-// 	onEachFeature: onEachFeature,
-
-// 	pointToLayer: function (feature, latlng) {
-// 		return L.circleMarker(latlng, {
-// 			radius: 8,
-// 			fillColor: "#ff7800",
-// 			color: "#000",
-// 			weight: 1,
-// 			opacity: 1,
-// 			fillOpacity: 0.8
-// 		});
-// 	}
-// }).addTo(map);
-
-// L.geoJSON(freeBus, {
-
-// 	filter: function (feature, layer) {
-// 		if (feature.properties) {
-// 			// If the property "underConstruction" exists and is true, return false (don't render features under construction)
-// 			return feature.properties.underConstruction !== undefined ? !feature.properties.underConstruction : true;
-// 		}
-// 		return false;
-// 	},
-
-// 	onEachFeature: onEachFeature
-// }).addTo(map);
-
-// var coorsLayer = L.geoJSON(coorsField, {
-
-// 	pointToLayer: function (feature, latlng) {
-// 		return L.marker(latlng, {icon: baseballIcon});
-// 	},
-
-// 	onEachFeature: onEachFeature
-// }).addTo(map);

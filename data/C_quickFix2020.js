@@ -44,7 +44,7 @@ var coquitlamData = {
         "city": "Coquitlam",
         "type": "Surface Treatment",
         "location": "David Separated Path intersections - especially at Shaughnessy, Oxford and Coast Meridian",
-        "description":"Paint the crosswalks green where the separated path along the south side of David crosses Shaughnessy, Oxford and Coast Meridian. Drivers are not looking out for cyclists and often make right/left turns from David on to those roads cutting off cyclists or nearly hitting them."
+        "description": "Paint the crosswalks green where the separated path along the south side of David crosses Shaughnessy, Oxford and Coast Meridian. Drivers are not looking out for cyclists and often make right/left turns from David on to those roads cutting off cyclists or nearly hitting them."
       },
       "geometry": {
         "type": "Point",
@@ -61,7 +61,7 @@ var coquitlamData = {
         "city": "Coquitlam",
         "type": "Surface Treatment",
         "location": "David Separated Path intersections - especially at Shaughnessy, Oxford and Coast Meridian",
-        "description":"Paint the crosswalks green where the separated path along the south side of David crosses Shaughnessy, Oxford and Coast Meridian. Drivers are not looking out for cyclists and often make right/left turns from David on to those roads cutting off cyclists or nearly hitting them."
+        "description": "Paint the crosswalks green where the separated path along the south side of David crosses Shaughnessy, Oxford and Coast Meridian. Drivers are not looking out for cyclists and often make right/left turns from David on to those roads cutting off cyclists or nearly hitting them."
       },
       "geometry": {
         "type": "Point",
@@ -78,7 +78,7 @@ var coquitlamData = {
         "city": "Coquitlam",
         "type": "Surface Treatment",
         "location": "David Separated Path intersections - especially at Shaughnessy, Oxford and Coast Meridian",
-        "description":"Paint the crosswalks green where the separated path along the south side of David crosses Shaughnessy, Oxford and Coast Meridian. Drivers are not looking out for cyclists and often make right/left turns from David on to those roads cutting off cyclists or nearly hitting them."
+        "description": "Paint the crosswalks green where the separated path along the south side of David crosses Shaughnessy, Oxford and Coast Meridian. Drivers are not looking out for cyclists and often make right/left turns from David on to those roads cutting off cyclists or nearly hitting them."
       },
       "geometry": {
         "type": "Point",
@@ -95,7 +95,7 @@ var coquitlamData = {
         "city": "Coquitlam",
         "type": "Maintenance & Repairs",
         "location": "Pitt River Road, East Side (Between Lougheed Hwy and Traboulay Trail)",
-        "description":"The cycling route between the Traboulay Trail and the Yellow Gate at Riverview (near Lougheed and Pitt River Road) runs along the East sidewalk of Pitt River Road. This sidewalk is currently very sandy and covered with debris. The worst section is right at the intersection of Pitt River Road and Lougheed Hwy (see image).",
+        "description": "The cycling route between the Traboulay Trail and the Yellow Gate at Riverview (near Lougheed and Pitt River Road) runs along the East sidewalk of Pitt River Road. This sidewalk is currently very sandy and covered with debris. The worst section is right at the intersection of Pitt River Road and Lougheed Hwy (see image).",
         "photo": "4.PNG",
         "photo_1": "4_1.PNG"
       },
@@ -164,7 +164,7 @@ var coquitlamData = {
         "coordinates": [
           -122.868456,
           49.229506
-          ]
+        ]
       }
     },
     {
@@ -238,6 +238,84 @@ var coquitlamData = {
           49.233729
         ]
       }
-    }
+    },
+    {
+      "type": "Feature",
+      "id": "11",
+      "properties": {
+        "city": "Coquitlam",
+        "type": "Green paint",
+        "location": "Guildford and Falcon",
+        "description": "Add green paint to bike lane in intersection",
+        "photo": "11.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.818510,
+          49.284540
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "12",
+      "properties": {
+        "city": "Coquitlam",
+        "type": "Pavement Markings",
+        "location": "Spuraway from Mariner to Armanda",
+        "description": "This designated bike route lacks shared lane markings. Please install sharrows."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8176426887512,
+            49.263120775516875
+          ],
+          [
+            -122.81622648239136,
+            49.26316978592896
+          ],
+          [
+            -122.81561493873596,
+            49.26334482271757
+          ],
+          [
+            -122.81427383422852,
+            49.26401695821629
+          ],
+          [
+            -122.81373739242552,
+            49.26415698529282
+          ],
+          [
+            -122.81317949295043,
+            49.264177989320025
+          ],
+          [
+            -122.8116452693939,
+            49.263799915462336
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "12",
+      "properties": {
+        "city": "Coquitlam",
+        "type": "Pavement Markings",
+        "location": "Spuraway from Mariner to Armanda",
+        "description": "This designated bike route lacks shared lane markings. Please install sharrows."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.814719,
+          49.263803
+        ]
+      }
+    },
   ]
 }
