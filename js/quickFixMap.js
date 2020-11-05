@@ -181,7 +181,8 @@ let legend = L.control({ position: "topright" });
 legend.onAdd = function () {
     let div = L.DomUtil.create("div", "legend");
     div.innerHTML =
-        '<b>Tri-Cities Quick Fix 2020</b><br>' +
+        '<b>Quick Fix Campaign</b><br>' +
+        '<b>Tri-Cities 2020</b><br>' +
         '<i class="circle" style="background-color: ' + portMoodyColor + '"></i>Port Moody<br>' +
         '<i class="circle" style="background-color: ' + coquitlamColor + '"></i>Coquitlam<br>' +
         '<i class="circle" style="background-color: ' + portCoqColor + '"></i>Port Coquitlam<br>' +
