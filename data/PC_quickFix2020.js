@@ -44,8 +44,8 @@ var poCoData = {
                 "city": "Port Coquitlam",
                 "type": "Surface treatment",
                 "location": "Coast Meridian at Overpass (NORTH END)",
-                "description": "Install plastic pylons so cars cannot cut into bike lane",
-                "municipality": "Pavement marking 2021 - Green conflict area"
+                "description": "Install plastic pylons so cars cannot cut into bike lane.",
+                "municipality": "We were unable to install delineators at the north end of the CMO as requested (regarding vehicle movements into the bike lane on the curve for EB CMO Connector to SB CMO), we were able to paint a green conflict area in that section."
             },
             "geometry": {
                 "type": "Point",
@@ -63,7 +63,7 @@ var poCoData = {
                 "type": "Bike symbol + tune magnetic loop",
                 "location": "Prairie and Shaugnessey",
                 "description": "Currently cyclists can't activate the signal to get across Shaughnessey eastbound on Prairie. Instead they need to activate three pedestrian lights. There is a magnetic loop but currently it only works for cars. Can it be tuned to pick up a bike, and then painted to indicate that bikes can trip it?",
-                "municipality": "Cannot change signal.  Referred to Infrastructure to install bike loop detector"
+                "municipality": "Cannot change signal.  Referred to Infrastructure to install bike loop detector."
             },
             "geometry": {
                 "type": "Point",
