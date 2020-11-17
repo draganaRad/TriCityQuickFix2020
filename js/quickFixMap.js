@@ -1,5 +1,10 @@
 var map = L.map("map", { center: [49.254667, -122.825015], zoom: 12 });
 
+if (L.Browser.mobile) {
+    map.removeControl(map.zoomControl);
+    map.setZoom(11);
+}
+
 L.tileLayer(
     'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
