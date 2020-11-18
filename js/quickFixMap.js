@@ -1,8 +1,10 @@
-var map = L.map("map", { center: [49.254667, -122.825015], zoom: 12 });
-
+var centerCoord = [49.254667, -122.825015]
 if (L.Browser.mobile) {
-    map.removeControl(map.zoomControl);
-    map.setZoom(11);
+    // increase tolerance for tapping (it was hard to tap on line exactly), zoom out a bit, and remove zoom control
+    var myRenderer = L.canvas({ padding: 0.1, tolerance: 5 });
+    var map = L.map("map", { center: centerCoord, zoom: 11, renderer: myRenderer, zoomControl: false});
+}else{
+    var map = L.map("map", { center: centerCoord, zoom: 12}); 
 }
 
 L.tileLayer(
@@ -31,25 +33,30 @@ var coquitlamIconLight = "#BA9FCC" // lighter purple
 var portCoqIconLight = "#EBF29D" // lighter green
 var metroVanIconLight = "#B5CFDE" // lighter blue grey
 
-var styleOpacity = 0.5
+lineWeight = 5
+if (L.Browser.mobile) {
+    lineWeight = 6
+}
+
+var styleOpacity = 0.6
 var portMoodyStyle = {
     "color": portMoodyColor,
-    "weight": 5,
+    "weight": lineWeight,
     "opacity": styleOpacity
 };
 var coquitlamStyle = {
     "color": coquitlamColor,
-    "weight": 5,
+    "weight": lineWeight,
     "opacity": styleOpacity
 };
 var portCoqStyle = {
     "color": portCoqColor,
-    "weight": 5,
+    "weight": lineWeight,
     "opacity": styleOpacity
 };
 var metroVanStyle = {
     "color": metroVanColor,
-    "weight": 5,
+    "weight": lineWeight,
     "opacity": styleOpacity
 };
 

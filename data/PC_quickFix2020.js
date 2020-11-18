@@ -84,24 +84,6 @@ var poCoData = {
                 "municipality": "Will review for pavement marking 2021"
             },
             "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -122.780579,
-                    49.256084
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "id": "14",
-            "properties": {
-                "city": "Port Coquitlam",
-                "type": "Pavement Markings",
-                "location": "Central Ave from Shaghnessey to Marry Hill Rd",
-                "description": "This designated bike route lacks shared lane markings. Please install sharrows.",
-                "municipality": "Will review for pavement marking 2021"
-            },
-            "geometry": {
                 "type": "LineString",
                 "coordinates": [
                   [
@@ -205,24 +187,6 @@ var poCoData = {
         },
         {
             "type": "Feature",
-            "id": "15",
-            "properties": {
-                "city": "Port Coquitlam",
-                "type": "Pavement Markings",
-                "location": "Central Ave from Shaghnessey to Marry Hill Rd",
-                "description": "This designated bike route lacks shared lane markings. Please install sharrows.",
-                "municipality": "Will review for pavement marking 2021"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -122.779084,
-                    49.233461
-                ]
-            }
-        },
-        {
-            "type": "Feature",
             "id": "16",
             "properties": {
                 "city": "Port Coquitlam",
@@ -247,24 +211,6 @@ var poCoData = {
         },
         {
             "type": "Feature",
-            "id": "16",
-            "properties": {
-                "city": "Port Coquitlam",
-                "type": "Pavement Markings",
-                "location": "Fraser Ave from Shaugnessey to York St",
-                "description": "This designated bike route lacks shared lane markings. Please install sharrows.",
-                "municipality": "Will review for pavement marking 2021"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -122.769882,
-                    49.269204
-                ]
-            }
-        },
-        {
-            "type": "Feature",
             "id": "17",
             "properties": {
                 "city": "Port Coquitlam",
@@ -284,24 +230,6 @@ var poCoData = {
                     -122.782408,
                     49.267991
                   ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "id": "17",
-            "properties": {
-                "city": "Port Coquitlam",
-                "type": "Pavement Markings",
-                "location": "Hastings St from Patricia to Davie",
-                "description": "This designated bike route lacks shared lane markings. Please install sharrows.",
-                "municipality": "Will review for pavement marking 2021"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -122.782278,
-                    49.272284
                 ]
             }
         },
@@ -334,24 +262,6 @@ var poCoData = {
                     -122.75605916976929,
                     49.276610804138414
                   ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "id": "18",
-            "properties": {
-                "city": "Port Coquitlam",
-                "type": "Pavement Markings",
-                "location": "Patricia from Shaughnessy to Coast Meridian",
-                "description": "Non MUP sections could use shared lane makrings. Please install sharrows.",
-                "municipality": "Will review for pavement marking 2021"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -122.764094,
-                    49.276601
                 ]
             }
         },
@@ -405,24 +315,6 @@ var poCoData = {
         },
         {
             "type": "Feature",
-            "id": "19",
-            "properties": {
-                "city": "Port Coquitlam",
-                "type": "Pavement Markings",
-                "location": "Salsbury Ave from Shaugnessey to Ulster St",
-                "description": "This designated bike route lacks shared lane markings. Please install sharrows.",
-                "municipality": "Will review for pavement marking 2021"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -122.764856,
-                    49.272421
-                ]
-            }
-        },
-        {
-            "type": "Feature",
             "id": "20",
             "properties": {
                 "city": "Port Coquitlam",
@@ -442,24 +334,6 @@ var poCoData = {
                     -122.782688,
                     49.260897
                   ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "id": "20",
-            "properties": {
-                "city": "Port Coquitlam",
-                "type": "Pavement Markings",
-                "location": "Shaughnessy from Nacht to Wilson",
-                "description": "This designated bike route lacks shared lane markings. Please install sharrows.",
-                "municipality": "Will review for pavement marking 2021"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -122.782680,
-                    49.254638
                 ]
             }
         },
@@ -493,24 +367,6 @@ var poCoData = {
         },
         {
             "type": "Feature",
-            "id": "21",
-            "properties": {
-                "city": "Port Coquitlam",
-                "type": "Pavement Markings",
-                "location": "Shaughnessy from Fraser to Patricia",
-                "description": "This designated bike route lacks shared lane markings. Please install sharrows.",
-                "municipality": "Will review for pavement marking 2021"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -122.775180,
-                    49.273824
-                ]
-            }
-        },
-        {
-            "type": "Feature",
             "id": "23",
             "properties": {
                 "city": "Port Coquitlam",
@@ -530,24 +386,6 @@ var poCoData = {
                     -122.769129,
                     49.244642
                   ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "id": "23",
-            "properties": {
-                "city": "Port Coquitlam",
-                "type": "Pavement Markings",
-                "location": "Taylor St from McLean to Pooley",
-                "description": "This designated bike route lacks shared lane markings. Please install sharrows.",
-                "municipality": "Will review for pavement marking 2021"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -122.769085,
-                    49.249179
                 ]
             }
         },
@@ -577,24 +415,6 @@ var poCoData = {
         },
         {
             "type": "Feature",
-            "id": "24",
-            "properties": {
-                "city": "Port Coquitlam",
-                "type": "Pavement Markings",
-                "location": "Wellington from Chalmers to Coquitlam Ave",
-                "description": "This designated bike route lacks shared lane markings. Please install sharrows.",
-                "municipality": "Will review for pavement marking 2021"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -122.761750,
-                    49.277363
-                ]
-            }
-        },
-        {
-            "type": "Feature",
             "id": "25",
             "properties": {
                 "city": "Port Coquitlam",
@@ -619,24 +439,6 @@ var poCoData = {
         },
         {
             "type": "Feature",
-            "id": "25",
-            "properties": {
-                "city": "Port Coquitlam",
-                "type": "Pavement Markings",
-                "location": "Westminster Ave from Coast Meridian Rd to Maxwell",
-                "description": "This designated bike route lacks shared lane markings. Please install sharrows.",
-                "municipality": "Will review for pavement marking 2021"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -122.759589,
-                    49.265139
-                ]
-            }
-        },
-        {
-            "type": "Feature",
             "id": "26",
             "properties": {
                 "city": "Port Coquitlam",
@@ -656,24 +458,6 @@ var poCoData = {
                     -122.775374,
                     49.260898
                   ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "id": "26",
-            "properties": {
-                "city": "Port Coquitlam",
-                "type": "Pavement Markings",
-                "location": "Wilson from Reeve St to Kingway Ave",
-                "description": "This designated bike route lacks shared lane markings. Please install sharrows.",
-                "municipality": "Will review for pavement marking 2021"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -122.780903,
-                    49.260920
                 ]
             }
         },

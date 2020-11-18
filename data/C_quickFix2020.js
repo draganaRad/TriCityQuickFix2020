@@ -152,23 +152,6 @@ var coquitlamData = {
     },
     {
       "type": "Feature",
-      "id": "6",
-      "properties": {
-        "city": "Coquitlam",
-        "type": "Maintenance & Repairs",
-        "location": "United Boulevard, Braid to the King Ed Overpass",
-        "description": "Sweep the debris and broken glass in the bikeway."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.868456,
-          49.229506
-        ]
-      }
-    },
-    {
-      "type": "Feature",
       "id": "7",
       "properties": {
         "city": "Coquitlam",
@@ -299,23 +282,6 @@ var coquitlamData = {
           ]
         ]
       }
-    },
-    {
-      "type": "Feature",
-      "id": "12",
-      "properties": {
-        "city": "Coquitlam",
-        "type": "Pavement Markings",
-        "location": "Spuraway from Mariner to Armanda",
-        "description": "This designated bike route lacks shared lane markings. Please install sharrows."
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.814719,
-          49.263803
-        ]
-      }
-    },
+    }
   ]
 }
