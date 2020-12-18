@@ -113,6 +113,16 @@ function onEachFeature(feature, layer) {
 }
 
 // add port moody layer --------------
+var portMoodyMarkers = L.markerClusterGroup({
+    maxClusterRadius: 60,
+    disableClusteringAtZoom: 17,
+    iconCreateFunction: function (cluster) {
+        var childCount = cluster.getChildCount();
+        return new L.DivIcon({ html: '<div><span>' + childCount + '</span></div>', className: 'marker-cluster marker-pmcluster', iconSize: new L.Point(40, 40) });
+    },
+    //Disable all of the defaults:
+    spiderfyOnMaxZoom: false, showCoverageOnHover: false, zoomToBoundsOnClick: false
+});
 var portMoodyMarker = L.AwesomeMarkers.icon({
     icon: 'circle',
     markerColor: portMoodyIconColor,
@@ -129,9 +139,20 @@ var portMoodyLayer = new L.geoJSON(portMoodyData, {
         });
     }
 });
-portMoodyLayer.addTo(map);
+portMoodyMarkers.addLayer(portMoodyLayer);
+map.addLayer(portMoodyMarkers);
+//portMoodyLayer.addTo(map);  //without clusters
 
 //add coquitlam layer --------------
+var coquitlamMarkers = L.markerClusterGroup({
+    maxClusterRadius: 60,
+    disableClusteringAtZoom: 17,
+    iconCreateFunction: function (cluster) {
+        var childCount = cluster.getChildCount();
+        return new L.DivIcon({ html: '<div><span>' + childCount + '</span></div>', className: 'marker-cluster marker-coqcluster', iconSize: new L.Point(40, 40) });
+    },
+    spiderfyOnMaxZoom: false, showCoverageOnHover: false, zoomToBoundsOnClick: false
+});
 var coquitlamMarker = L.AwesomeMarkers.icon({
     icon: 'circle',
     markerColor: coquitlamIconColor,
@@ -148,9 +169,19 @@ var coquitlamLayer = new L.geoJSON(coquitlamData, {
         });
     }
 });
-coquitlamLayer.addTo(map);
+coquitlamMarkers.addLayer(coquitlamLayer);
+map.addLayer(coquitlamMarkers);
 
 // add port coquitlam layer --------------
+var portCoqMarkers = L.markerClusterGroup({
+    maxClusterRadius: 60,
+    disableClusteringAtZoom: 17,
+    iconCreateFunction: function (cluster) {
+        var childCount = cluster.getChildCount();
+        return new L.DivIcon({ html: '<div><span>' + childCount + '</span></div>', className: 'marker-cluster marker-pccluster', iconSize: new L.Point(40, 40) });
+    },
+    spiderfyOnMaxZoom: false, showCoverageOnHover: false, zoomToBoundsOnClick: false
+});
 var portCoqMarker = L.AwesomeMarkers.icon({
     icon: 'circle',
     markerColor: portCoqIconColor,
@@ -167,9 +198,19 @@ var portCoqLayer = new L.geoJSON(poCoData, {
         });
     }
 });
-portCoqLayer.addTo(map);
+portCoqMarkers.addLayer(portCoqLayer);
+map.addLayer(portCoqMarkers);
 
 // add metro van layer --------------
+var metroVanMarkers = L.markerClusterGroup({
+    maxClusterRadius: 60,
+    disableClusteringAtZoom: 17,
+    iconCreateFunction: function (cluster) {
+        var childCount = cluster.getChildCount();
+        return new L.DivIcon({ html: '<div><span>' + childCount + '</span></div>', className: 'marker-cluster marker-mvcluster', iconSize: new L.Point(40, 40) });
+    },
+    spiderfyOnMaxZoom: false, showCoverageOnHover: false, zoomToBoundsOnClick: false
+});
 var metroVanMarker = L.AwesomeMarkers.icon({
     icon: 'circle',
     markerColor: metroVanIconColor,
@@ -186,7 +227,8 @@ var metroVanLayer = new L.geoJSON(metroVanData, {
         });
     }
 });
-metroVanLayer.addTo(map);
+metroVanMarkers.addLayer(metroVanLayer);
+map.addLayer(metroVanMarkers);
 
 // add legend -----------------
 let legend = L.control({ position: "topright" });

@@ -1,3 +1,5 @@
+/* legend */
+
 .legend {
     padding: 6px 8px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -21,4 +23,42 @@ div.legend.leaflet-control br {
 .circle {
     float: left;
     border-radius: 50%;
+}
+
+/* marker clusters */
+
+.marker-pmcluster {
+    background-color: rgba(145, 205, 255, 0.6);
+}
+
+.marker-pmcluster div {
+    background-color: rgba(45, 105, 155, 0.6);
+}
+
+.marker-coqcluster {
+    background-color: rgba(186, 159, 204, 0.6);
+}
+
+.marker-coqcluster div {
+    background-color: rgba(86, 59, 104, 0.6);
+}
+
+.marker-pccluster {
+    background-color: rgba(235, 242, 157, 0.6);
+}
+
+.marker-pccluster div {
+    background-color: rgba(135, 142, 57, 0.6);
+}
+
+.marker-mvcluster {
+    background-color: rgba(181, 207, 222, 0.6);
+}
+
+.marker-mvcluster div {
+    background-color: rgba(81, 107, 122, 0.6);
+}
+
+.marker-cluster div {
+    color: white;
 }
