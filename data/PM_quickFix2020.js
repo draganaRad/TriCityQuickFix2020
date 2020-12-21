@@ -9,7 +9,10 @@ var portMoodyData = {
                 "type": "Green paint",
                 "location": "Ioco and Murray",
                 "description": "Add green paint to bike lane in intersection",
-                "photo": "2.png"
+                "photo": "2.png",
+                "municipality": "Completed (Summer 2020)",
+                "photo_fixed": "2.jpg",
+                "photo_fixed_1": "2_1.jpg",
             },
             "geometry": {
                 "type": "Point",
@@ -27,7 +30,9 @@ var portMoodyData = {
                 "type": "Repair (bike lane)",
                 "location": "Port Moody, in front of Moody Station",
                 "description": "There are lots of potholes on the official bike route in front of Moody Station, right at the intersection of Williams and Spring Street.",
-                "photo": "3.png"
+                "photo": "3.png",
+                "municipality": "Completed - road repaved (Summer 2020)",
+                "photo_fixed": "3.jpg",
             },
             "geometry": {
                 "type": "Point",
@@ -45,7 +50,8 @@ var portMoodyData = {
                 "type": "Pavement Markings",
                 "location": "Forest Park Way, north of David Ave",
                 "description": "This designated bike route lacks shared lane markings. Please install sharrows.",
-                "photo": "4.png"
+                "photo": "4.png",
+                "municipality": "To be included in road marking program for 2021 - Summer 2021"
             },
             "geometry": {
                 "type": "Point",
@@ -63,7 +69,10 @@ var portMoodyData = {
                 "type": "Surface treatment",
                 "location": "Ioco and Murray",
                 "description": "Add green paint to get across Ioco at Murray. Thanks BTW for all the paint around Suter Brook :-)",
-                "photo": "5.png"
+                "photo": "5.png",
+                "municipality": "Green paint has been added in the northbound direction. No green paint added in the southbound direction at this time, however, we will consider this for the future. (Summer 2020)",
+                "photo_fixed": "5.jpg",
+                "photo_fixed_1": "5_1.jpg",
             },
             "geometry": {
                 "type": "Point",
@@ -80,7 +89,8 @@ var portMoodyData = {
                 "city": "Port Moody",
                 "type": "Surface treatment",
                 "location": "Suter Brook trail from Murray Street to City Hall/ Rec Center parking lot",
-                "description": "Add a curb cut at the City Hall end. The big bump into the City Hall parking lot is hard when my kid is in a child seat, or if there is a lot of shopping cargo on my bike. This change would improve the overall accessibility of this handy and under-rated little trail."
+                "description": "Add a curb cut at the City Hall end. The big bump into the City Hall parking lot is hard when my kid is in a child seat, or if there is a lot of shopping cargo on my bike. This change would improve the overall accessibility of this handy and under-rated little trail.",
+                "municipality": "This is not a formal bike route but we will review if a small ramp can be added as it does provide a connection to a bike route (Review to be completed spring 2021)"
             },
             "geometry": {
                 "type": "Point",
@@ -98,7 +108,10 @@ var portMoodyData = {
                 "type": "Maintenance and repair",
                 "location": "In front of Moody Station",
                 "description": "Repair bike lane in front of Moody Station",
-                "photo": "7.png"
+                "photo": "7.png",
+                "municipality": "Completed - road repaved (Summer 2020)",
+                "photo_fixed": "7.jpg",
+                "photo_fixed_1": "7_1.jpg",
             },
             "geometry": {
                 "type": "Point",
@@ -116,7 +129,8 @@ var portMoodyData = {
                 "type": "Maintenance and repair",
                 "location": "First Avenue and Ioco",
                 "description": "Repair potholes in bike lane. Currently forces people cycling into the driving lane",
-                "photo": "8.jpeg"
+                "photo": "8.jpeg",
+                "municipality": "Scheduled for December 2020",
             },
             "geometry": {
                 "type": "Point",
@@ -134,7 +148,8 @@ var portMoodyData = {
                 "type": "Maintenance and repair",
                 "location": "First Avenue and Ioco",
                 "description": "Trim bushes/shrubs out of bike lane. People cycling currently need to detour into the driving lane to avoid",
-                "photo": "9.jpeg"
+                "photo": "9.jpeg",
+                "municipality": "Scheduled for December 2020",
             },
             "geometry": {
                 "type": "Point",

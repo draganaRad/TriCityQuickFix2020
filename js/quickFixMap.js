@@ -2,9 +2,9 @@ var centerCoord = [49.254667, -122.825015]
 if (L.Browser.mobile) {
     // increase tolerance for tapping (it was hard to tap on line exactly), zoom out a bit, and remove zoom control
     var myRenderer = L.canvas({ padding: 0.1, tolerance: 5 });
-    var map = L.map("map", { center: centerCoord, zoom: 11, renderer: myRenderer, zoomControl: false});
-}else{
-    var map = L.map("map", { center: centerCoord, zoom: 12}); 
+    var map = L.map("map", { center: centerCoord, zoom: 11, renderer: myRenderer, zoomControl: false });
+} else {
+    var map = L.map("map", { center: centerCoord, zoom: 12 });
 }
 
 L.tileLayer(
@@ -87,25 +87,39 @@ function onEachFeature(feature, layer) {
             popupContent += "<br><b>Description: </b>";
             popupContent += feature.properties.description;
         }
+        // add photo(s)
+        // remove white spaces in city if exist. no white spaces in photo names
+        var city = feature.properties.city.replace(/\s/g, "");
+        if (feature.properties.photo) {
+            //console.log(city)
+            popupContent += "<br>"
+            imageSrc = "img/" + city + "/" + feature.properties.photo
+            popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' width='148' height='100'></img></a>"
+            if (feature.properties.photo_1) {
+                // two photos. show side by side (note: width has to be 148 or less. othrewise second show below not next to first one)
+                imageSrc1 = "img/" + city + "/" + feature.properties.photo_1
+                popupContent += "<span> "
+                popupContent += "<a href='" + imageSrc1 + "' target='_blank'><img src='" + imageSrc1 + "' width='148' height='100'></img></a>"
+                popupContent += "</span>"
+            }
+        }
         // add municipality answer
         if (feature.properties.municipality) {
             popupContent += "<br><b>Municipality response: </b>";
             popupContent += feature.properties.municipality;
         }
-        // add photo
-        if (feature.properties.photo) {
-            // remove white spaces in city if exist
-            var city = feature.properties.city.replace(/\s/g, "");
+        // add fixed photo(s)
+        if (feature.properties.photo_fixed) {
             //console.log(city)
             popupContent += "<br>"
-            var imageSrc = "img/" + city + "/" + feature.properties.photo
-            popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' width='150' height='100'></img></a>"
-            // add second photo
-            if (feature.properties.photo_1) {
-                imageSrc = "img/" + city + "/" + feature.properties.photo_1
-                popupContent += "<br>"
-                popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' width='150' height='100'></img></a>"
-                //popupContent += "<a href='/img/Coquitlam/4.PNG' target='_blank'><img src='/img/Coquitlam/4.PNG' width='150' height='100'></img></a>"
+            imageSrc = "img/" + city + "/Fixed/" + feature.properties.photo_fixed
+            popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' width='148' height='100'></img></a>"
+            if (feature.properties.photo_fixed_1) {
+                // two photos. show side by side (note: width has to be 148 or less. othrewise second show below not next to first one)
+                imageSrc1 = "img/" + city + "/Fixed/" + feature.properties.photo_fixed_1
+                popupContent += "<span> "
+                popupContent += "<a href='" + imageSrc1 + "' target='_blank'><img src='" + imageSrc1 + "' width='148' height='100'></img></a>"
+                popupContent += "</span>"
             }
         }
     }
