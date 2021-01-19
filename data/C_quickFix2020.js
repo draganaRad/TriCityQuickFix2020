@@ -103,7 +103,7 @@ var coquitlamData = {
         "description": "The cycling route between the Traboulay Trail and the Yellow Gate at Riverview (near Lougheed and Pitt River Road) runs along the East sidewalk of Pitt River Road. This sidewalk is currently very sandy and covered with debris. The worst section is right at the intersection of Pitt River Road and Lougheed Hwy (see image).",
         "municipality": "Cycle facilities swept/cleaned at Pitt River Rd and Lougheed Hwy",
         "photo": "4.PNG",
-        "photo_1": "4_1.png",
+        "photo_1": "4_1.PNG",
         "fixed": "yes",
         "photo_fixed": "4.png"
       },
