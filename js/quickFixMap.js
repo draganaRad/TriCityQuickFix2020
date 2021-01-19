@@ -15,6 +15,8 @@ L.tileLayer(
 }
 ).addTo(map);
 
+map.attributionControl.addAttribution('<a href="http://wiki.bikehub.ca/committees/index.php?title=Tri-Cities_Committee_Wiki">Tri-Cities HUB Committee</a>');
+
 // colors and styles -------------------
 var portMoodyColor = "#2D699B" // 'darkblue'
 var coquitlamColor = "#563B68" // 'darkpurple'
@@ -117,7 +119,7 @@ function onEachFeature(feature, layer) {
             imageSrc = "img/" + city + "/Fixed/" + feature.properties.photo_fixed
             popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' width='148' height='100'></img></a>"
             if (feature.properties.photo_fixed_1) {
-                // two photos. show side by side (note: width has to be 148 or less. othrewise second show below not next to first one)
+                // two photos. show side by side (note: width has to be 148 or less. othrewise second shows below not next to first one)
                 imageSrc1 = "img/" + city + "/Fixed/" + feature.properties.photo_fixed_1
                 popupContent += "<span> "
                 popupContent += "<a href='" + imageSrc1 + "' target='_blank'><img src='" + imageSrc1 + "' width='148' height='100'></img></a>"
