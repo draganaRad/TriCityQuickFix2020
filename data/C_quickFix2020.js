@@ -9,7 +9,8 @@ var coquitlamData = {
         "type": "Infrastructure Modification",
         "location": "",
         "description": "This little trail has a gate in front that makes it extremely difficult to get a bike or stroller through. Can it be removed? There is no risk of anyone getting a car in here.",
-        "photo": "1.png"
+        "photo": "1.png",
+        "municipality": "Approved fixing."
       },
       "geometry": {
         "type": "Point",
@@ -27,7 +28,8 @@ var coquitlamData = {
         "type": "Signage",
         "location": "Entry to HomeSense/Winners, West bound on Lougheed Higway east of Schoolhouse Street",
         "description": "Under the right turn only sign add a \"Except Bicycles\" sign, I have been tailgaited by vehicle through this bike only corridor more than once.",
-        "photo": "2.jpg"
+        "photo": "2.jpg",
+        "municipality": "To discuss with our Operations team."
       },
       "geometry": {
         "type": "Point",
@@ -44,7 +46,8 @@ var coquitlamData = {
         "city": "Coquitlam",
         "type": "Surface Treatment",
         "location": "David Separated Path intersections - especially at Shaughnessy, Oxford and Coast Meridian",
-        "description": "Paint the crosswalks green where the separated path along the south side of David crosses Shaughnessy, Oxford and Coast Meridian. Drivers are not looking out for cyclists and often make right/left turns from David on to those roads cutting off cyclists or nearly hitting them."
+        "description": "Paint the crosswalks green where the separated path along the south side of David crosses Shaughnessy, Oxford and Coast Meridian. Drivers are not looking out for cyclists and often make right/left turns from David on to those roads cutting off cyclists or nearly hitting them.",
+        "municipality": "It’s not our current practice to install green paint at intersections, we typically do this at conflict areas such as where a motor vehicle crosses over a bike lane that continues straight."
       },
       "geometry": {
         "type": "Point",
@@ -61,7 +64,8 @@ var coquitlamData = {
         "city": "Coquitlam",
         "type": "Surface Treatment",
         "location": "David Separated Path intersections - especially at Shaughnessy, Oxford and Coast Meridian",
-        "description": "Paint the crosswalks green where the separated path along the south side of David crosses Shaughnessy, Oxford and Coast Meridian. Drivers are not looking out for cyclists and often make right/left turns from David on to those roads cutting off cyclists or nearly hitting them."
+        "description": "Paint the crosswalks green where the separated path along the south side of David crosses Shaughnessy, Oxford and Coast Meridian. Drivers are not looking out for cyclists and often make right/left turns from David on to those roads cutting off cyclists or nearly hitting them.",
+        "municipality": "It’s not our current practice to install green paint at intersections, we typically do this at conflict areas such as where a motor vehicle crosses over a bike lane that continues straight."
       },
       "geometry": {
         "type": "Point",
@@ -78,7 +82,8 @@ var coquitlamData = {
         "city": "Coquitlam",
         "type": "Surface Treatment",
         "location": "David Separated Path intersections - especially at Shaughnessy, Oxford and Coast Meridian",
-        "description": "Paint the crosswalks green where the separated path along the south side of David crosses Shaughnessy, Oxford and Coast Meridian. Drivers are not looking out for cyclists and often make right/left turns from David on to those roads cutting off cyclists or nearly hitting them."
+        "description": "Paint the crosswalks green where the separated path along the south side of David crosses Shaughnessy, Oxford and Coast Meridian. Drivers are not looking out for cyclists and often make right/left turns from David on to those roads cutting off cyclists or nearly hitting them.",
+        "municipality": "It’s not our current practice to install green paint at intersections, we typically do this at conflict areas such as where a motor vehicle crosses over a bike lane that continues straight."
       },
       "geometry": {
         "type": "Point",
@@ -96,8 +101,10 @@ var coquitlamData = {
         "type": "Maintenance & Repairs",
         "location": "Pitt River Road, East Side (Between Lougheed Hwy and Traboulay Trail)",
         "description": "The cycling route between the Traboulay Trail and the Yellow Gate at Riverview (near Lougheed and Pitt River Road) runs along the East sidewalk of Pitt River Road. This sidewalk is currently very sandy and covered with debris. The worst section is right at the intersection of Pitt River Road and Lougheed Hwy (see image).",
+        "municipality": "Cycle facilities swept/cleaned at Pitt River Rd and Lougheed Hwy",
         "photo": "4.PNG",
-        "photo_1": "4_1.PNG"
+        "photo_1": "4_1.PNG",
+        "fixed": "yes"
       },
       "geometry": {
         "type": "Point",
@@ -109,12 +116,34 @@ var coquitlamData = {
     },
     {
       "type": "Feature",
+      "id": "5",
+      "properties": {
+        "city": "Coquitlam",
+        "type": "Grind curb",
+        "location": "North boundary of Como Lake park at the eastern end of Grover avenue",
+        "description": "There is an informal trail along the north boundary of the park but the entrance from Grover (going east) has a very abrupt jog that also has visibility issues.  Could be fixed by grinding down the ashpalt curb to allow cyclist to proceed in a straight line.",
+        "municipality": "Approved fixing."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.858644,
+          49.262580
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "6",
       "properties": {
         "city": "Coquitlam",
         "type": "Maintenance & Repairs",
         "location": "United Boulevard, Braid to the King Ed Overpass",
-        "description": "Sweep the debris and broken glass in the bikeway."
+        "description": "Sweep the debris and broken glass in the bikeway.",
+        "municipality": "Debris and broken glass swept out of bikeway on United Blvd",
+        "photo": "6.png",
+        "fixed": "yes",
+        "photo_fixed": "6.png"
       },
       "geometry": {
         "type": "LineString",
@@ -152,13 +181,35 @@ var coquitlamData = {
     },
     {
       "type": "Feature",
+      "id": "6",
+      "properties": {
+        "city": "Coquitlam",
+        "type": "Maintenance & Repairs",
+        "location": "United Boulevard, Braid to the King Ed Overpass",
+        "description": "Sweep the debris and broken glass in the bikeway.",
+        "municipality": "Debris and broken glass swept out of bikeway on United Blvd",
+        "photo": "6.png",
+        "fixed": "yes",
+        "photo_fixed": "6.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.87126541137694,
+          49.22918689173629
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "7",
       "properties": {
         "city": "Coquitlam",
         "type": "Surface treatment",
         "location": "Near northwest corner of Gatensbury and Grover",
         "description": "Please restore informal bike trail connecting the gap in Grover. Due to recent house construction, trail is no longer accessible. Just needs a little gravel added to the right of the \"end of road\" sign in the attached photo.",
-        "photo": "7.png"
+        "photo": "7.png",
+        "municipality": "Approved fixing."
       },
       "geometry": {
         "type": "Point",
