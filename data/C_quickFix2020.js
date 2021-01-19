@@ -103,8 +103,9 @@ var coquitlamData = {
         "description": "The cycling route between the Traboulay Trail and the Yellow Gate at Riverview (near Lougheed and Pitt River Road) runs along the East sidewalk of Pitt River Road. This sidewalk is currently very sandy and covered with debris. The worst section is right at the intersection of Pitt River Road and Lougheed Hwy (see image).",
         "municipality": "Cycle facilities swept/cleaned at Pitt River Rd and Lougheed Hwy",
         "photo": "4.PNG",
-        "photo_1": "4_1.PNG",
-        "fixed": "yes"
+        "photo_1": "4_1.png",
+        "fixed": "yes",
+        "photo_fixed": "4.png"
       },
       "geometry": {
         "type": "Point",
@@ -141,9 +142,7 @@ var coquitlamData = {
         "location": "United Boulevard, Braid to the King Ed Overpass",
         "description": "Sweep the debris and broken glass in the bikeway.",
         "municipality": "Debris and broken glass swept out of bikeway on United Blvd",
-        "photo": "6.png",
-        "fixed": "yes",
-        "photo_fixed": "6.png"
+        "fixed": "yes"
       },
       "geometry": {
         "type": "LineString",
@@ -188,9 +187,7 @@ var coquitlamData = {
         "location": "United Boulevard, Braid to the King Ed Overpass",
         "description": "Sweep the debris and broken glass in the bikeway.",
         "municipality": "Debris and broken glass swept out of bikeway on United Blvd",
-        "photo": "6.png",
-        "fixed": "yes",
-        "photo_fixed": "6.png"
+        "fixed": "yes"
       },
       "geometry": {
         "type": "Point",
