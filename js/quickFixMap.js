@@ -21,19 +21,19 @@ map.attributionControl.addAttribution('<a href="http://wiki.bikehub.ca/committee
 var portMoodyColor = "#2D699B" // 'darkblue'
 var coquitlamColor = "#563B68" // 'darkpurple'
 var portCoqColor = "#878E39" // 'darkgreen'
-var metroVanColor = "#516B7A" // 'cadetblue'
+//var metroVanColor = "#516B7A" // 'cadetblue'
 
 // icon colors
 var portMoodyIconColor = "darkblue"
 var coquitlamIconColor = "darkpurple"
 var portCoqIconColor = "darkgreen"
-var metroVanIconColor = "cadetblue"
+//var metroVanIconColor = "cadetblue"
 
 // icon light colors (add 100 to regular colors in rgb "Pages" color format dialog)
 var portMoodyIconLight = "#91CDFF" // lighter blue
 var coquitlamIconLight = "#BA9FCC" // lighter purple
 var portCoqIconLight = "#EBF29D" // lighter green
-var metroVanIconLight = "#B5CFDE" // lighter blue grey
+//var metroVanIconLight = "#B5CFDE" // lighter blue grey
 
 lineWeight = 5
 if (L.Browser.mobile) {
@@ -56,11 +56,12 @@ var portCoqStyle = {
     "weight": lineWeight,
     "opacity": styleOpacity
 };
-var metroVanStyle = {
-    "color": metroVanColor,
-    "weight": lineWeight,
-    "opacity": styleOpacity
-};
+// moved metro van items to port coquitlam
+// var metroVanStyle = {
+//     "color": metroVanColor,
+//     "weight": lineWeight,
+//     "opacity": styleOpacity
+// };
 
 // functions -------------------------
 
@@ -196,11 +197,6 @@ portCoqLayer = createLayer(poCoData, portCoqStyle, portCoqIconColor, portCoqIcon
 portCoqMarkers.addLayer(portCoqLayer);
 map.addLayer(portCoqMarkers);
 
-var metroVanMarkers = createClusterGroup('mvcluster')  //style name is defined in quickFix.css
-metroVanLayer = createLayer(metroVanData, metroVanStyle, metroVanIconColor, metroVanIconLight)
-metroVanMarkers.addLayer(metroVanLayer);
-map.addLayer(metroVanMarkers);
-
 // add legend -----------------
 let legend = L.control({ position: "topright" });
 legend.onAdd = function () {
@@ -218,7 +214,6 @@ legend.onAdd = function () {
         '<i class="circle" style="background-color: ' + portMoodyColor + '"></i>Port Moody<br>' +
         '<i class="circle" style="background-color: ' + coquitlamColor + '"></i>Coquitlam<br>' +
         '<i class="circle" style="background-color: ' + portCoqColor + '"></i>Port Coquitlam<br>' +
-        '<i class="circle" style="background-color: ' + metroVanColor + '"></i>Metro Vancouver<br>' +
         legendNote + '<br>';
     return div;
 };
