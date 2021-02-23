@@ -46,7 +46,8 @@ var poCoData = {
                 "location": "Coast Meridian at Overpass (NORTH END)",
                 "description": "Install plastic pylons so cars cannot cut into bike lane.",
                 "municipality": "We were unable to install delineators at the north end of the CMO as requested (regarding vehicle movements into the bike lane on the curve for EB CMO Connector to SB CMO), we were able to paint a green conflict area in that section.",
-                "fixed": "yes"
+                "fixed": "yes",
+                "photo_fixed": "12.jpeg"
             },
             "geometry": {
                 "type": "Point",
